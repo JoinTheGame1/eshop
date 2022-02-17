@@ -99,13 +99,10 @@
 		05DE4C0F27BE867E002309FD /* EShop */ = {
 			isa = PBXGroup;
 			children = (
-				05DE4C1027BE867E002309FD /* AppDelegate.swift */,
-				05DE4C1227BE867E002309FD /* SceneDelegate.swift */,
-				05DE4C1427BE867E002309FD /* ViewController.swift */,
-				05DE4C1627BE867E002309FD /* Main.storyboard */,
-				05DE4C1927BE8681002309FD /* Assets.xcassets */,
-				05DE4C1B27BE8681002309FD /* LaunchScreen.storyboard */,
-				05DE4C1E27BE8681002309FD /* Info.plist */,
+				05DE4C4327BE887A002309FD /* App */,
+				05DE4C4227BE8872002309FD /* Core */,
+				05DE4C4127BE885F002309FD /* Resources */,
+				05DE4C4027BE87D2002309FD /* Environments */,
 			);
 			path = EShop;
 			sourceTree = "<group>";
@@ -125,6 +122,73 @@
 				05DE4C3327BE8681002309FD /* EShopUITestsLaunchTests.swift */,
 			);
 			path = EShopUITests;
+			sourceTree = "<group>";
+		};
+		05DE4C4027BE87D2002309FD /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				05DE4C1E27BE8681002309FD /* Info.plist */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		05DE4C4127BE885F002309FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				05DE4C1927BE8681002309FD /* Assets.xcassets */,
+				05DE4C1B27BE8681002309FD /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		05DE4C4227BE8872002309FD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		05DE4C4327BE887A002309FD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				05DE4C1027BE867E002309FD /* AppDelegate.swift */,
+				05DE4C1227BE867E002309FD /* SceneDelegate.swift */,
+				05DE4C4627BE888C002309FD /* BusinessLogic */,
+				05DE4C4727BE889F002309FD /* Entity */,
+				05DE4C4527BE8885002309FD /* Assembly */,
+				05DE4C4427BE887F002309FD /* Flows */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		05DE4C4427BE887F002309FD /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				05DE4C1627BE867E002309FD /* Main.storyboard */,
+				05DE4C1427BE867E002309FD /* ViewController.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		05DE4C4527BE8885002309FD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		05DE4C4627BE888C002309FD /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		05DE4C4727BE889F002309FD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,7 +505,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ASL4294V9V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EShop/Info.plist;
+				INFOPLIST_FILE = EShop/Environments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -469,7 +533,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ASL4294V9V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EShop/Info.plist;
+				INFOPLIST_FILE = EShop/Environments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
