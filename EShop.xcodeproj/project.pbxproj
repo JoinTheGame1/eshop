@@ -26,6 +26,7 @@
 		05DE4C5927C3B489002309FD /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DE4C5827C3B489002309FD /* AuthRequestFactory.swift */; };
 		05DE4C5B27C3B4A7002309FD /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DE4C5A27C3B4A7002309FD /* Auth.swift */; };
 		05DE4C5D27C3B4D1002309FD /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DE4C5C27C3B4D1002309FD /* RequestFactory.swift */; };
+		05DE4C5F27C3BA36002309FD /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DE4C5E27C3BA36002309FD /* LogoutResult.swift */; };
 		998881D50067DABEFC8029E0 /* Pods_EShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E12D7C906554E19EB8EFC2 /* Pods_EShop.framework */; };
 		9F3620F274D6CAD98A45B65A /* Pods_EShop_EShopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95EA1EA8F571844EDD998FD3 /* Pods_EShop_EShopUITests.framework */; };
 		C91037740CF09D6C1EF77B3C /* Pods_EShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CA428D3A45CFBBAC41C515 /* Pods_EShopTests.framework */; };
@@ -72,6 +73,7 @@
 		05DE4C5827C3B489002309FD /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
 		05DE4C5A27C3B4A7002309FD /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		05DE4C5C27C3B4D1002309FD /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		05DE4C5E27C3BA36002309FD /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
 		2283F93B290FE2057FBE4164 /* Pods-EShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EShop.release.xcconfig"; path = "Target Support Files/Pods-EShop/Pods-EShop.release.xcconfig"; sourceTree = "<group>"; };
 		581C162AEECBD5CF84A63240 /* Pods-EShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EShop.debug.xcconfig"; path = "Target Support Files/Pods-EShop/Pods-EShop.debug.xcconfig"; sourceTree = "<group>"; };
 		5B8E82B7DAFEABF7233D0840 /* Pods-EShop-EShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EShop-EShopUITests.release.xcconfig"; path = "Target Support Files/Pods-EShop-EShopUITests/Pods-EShop-EShopUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			children = (
 				05DE4C5327C3B448002309FD /* LoginResult.swift */,
 				05DE4C5527C3B459002309FD /* User.swift */,
+				05DE4C5E27C3BA36002309FD /* LogoutResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 			files = (
 				05DE4C5927C3B489002309FD /* AuthRequestFactory.swift in Sources */,
 				05DE4C5227C3B1D4002309FD /* RequestRouter.swift in Sources */,
+				05DE4C5F27C3BA36002309FD /* LogoutResult.swift in Sources */,
 				05DE4C5027C3B1C7002309FD /* AbstractRequestFactory.swift in Sources */,
 				05DE4C5D27C3B4D1002309FD /* RequestFactory.swift in Sources */,
 				05DE4C4C27C3B181002309FD /* ErrorParser.swift in Sources */,
