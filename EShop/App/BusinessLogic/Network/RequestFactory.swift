@@ -9,7 +9,6 @@ import Foundation
 import Alamofire
 
 class RequestFactory {
-    
     func makeErrorParser() -> AbstractErrorParser {
         return ErrorParser()
     }
@@ -27,5 +26,10 @@ class RequestFactory {
     func makeAuthRequestFatory() -> AuthRequestFactory {
         let errorParser = makeErrorParser()
         return Auth(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+    
+    func makeSignUpRequestFatory() -> SignUpRequestFactory {
+        let errorParser = makeErrorParser()
+        return SignUp(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
 }

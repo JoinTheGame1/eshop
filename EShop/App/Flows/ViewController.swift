@@ -15,12 +15,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         authRequest()
         logoutRequest()
+        signUpRequest()
     }
 
     func authRequest() {
-        let auth = requestFactory.makeAuthRequestFatory()
+        let factory = requestFactory.makeAuthRequestFatory()
 
-        auth.login(userName: "Somebody", password: "mypassword") { response in
+        factory.login(userName: "Somebody", password: "mypassword") { response in
             switch response.result {
                 case .success(let login):
                     print(login)
@@ -31,9 +32,9 @@ class ViewController: UIViewController {
     }
     
     func logoutRequest() {
-        let auth = requestFactory.makeAuthRequestFatory()
+        let factory = requestFactory.makeAuthRequestFatory()
 
-        auth.logout(userId: 123) { response in
+        factory.logout(userId: 123) { response in
             switch response.result {
                 case .success(let logout):
                     print(logout)
@@ -42,6 +43,25 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
+    func signUpRequest() {
+        let factory = requestFactory.makeSignUpRequestFatory()
+        let user = User(id: 123,
+                        login: "NeverGonnaSignYouUp",
+                        password: "RunAround",
+                        email: "dog@gmail.com",
+                        gender: "m",
+                        creditCard: "1337-1337-1337-1337",
+                        bio: "Somebody tell me...",
+                        name: "Rick",
+                        lastname: "Astley")
+        factory.signUp(user: user) { response in
+            switch response.result {
+                case .success(let signUp):
+                    print(signUp)
+                case .failure(let error):
+                    print(error.localizedDescription)
+            }
+        }
+    }
 }
-
